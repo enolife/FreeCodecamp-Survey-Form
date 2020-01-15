@@ -1,6 +1,14 @@
+/* .................. Header Container Styles .................. */
+
 .header-container {
     background-color: #1f1f40;
     padding-bottom: 15px;
+}
+
+.airdrop {
+    height: 16vh;
+    margin-bottom: 1.2%;
+    margin-left: 10%;
 }
 
 h1 {
@@ -13,62 +21,77 @@ h1 {
     font-weight: 600;
 }
 
-
 .header-container>h1,
 p {
     color: white;
 }
 
+
+
+
+
+
+/* .................. Form Container Styles .................. */
 .container {
     padding-top: 30px;
 }
 
-.airdrop {
-    height: 16vh;
-    margin-bottom: 1.2%;
-    margin-left: 10%;
 
-}
-
+/* Form */
 #survey-form {
     padding-bottom: 15%;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 1.15em;
     margin: 0% 23% 0% 25%;
-
 }
 
-span {
-    font-weight: 700;
-}
-
-.custom-control-input:checked~.custom-control-label::before {
-    color: #fff !important;
-    border-color: #4b49ff !important;
-    background-color: #4b49ff !important;
-}
-
-.col-8 {
-    padding-left: 0 !important;
-}
 
 .form-group {
     margin: 2.5% 0% !important;
 }
 
+/* The span tag here makes the form label bolder */
+span {
+    font-weight: 700;
+}
+
 .form-control {
     background-color: #ebebeb !important;
     height: calc(1.7em + .79rem + 2px) !important;
-
 }
 
 .custom-control {
     padding: 0.4em;
 }
 
+/* Checkbox and Radio Button Color when Selected */
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff !important;
+    border-color: #4b49ff !important;
+    background-color: #4b49ff !important;
+}
+
+
+
+/* Form input-boxes border color when input is valid */
+
+input:valid {
+    border: 1px solid #1f1f40;
+}
+
+select:valid {
+    border: 1px solid #1f1f40;
+}
+
+textarea:valid {
+    border: 1px solid #1f1f40;
+}
+
+
+/* Form Button Styles */
 .btn-primary {
-    color: #fff;
+    color: #fff !important;
     background-color: #4b49ff !important;
     border-color: #4b49ff !important;
     border-radius: 100vh !important;
@@ -80,8 +103,16 @@ span {
     background: rgb(55, 53, 214) !important;
 }
 
+
+/* Submit Button Unclickable if form validation fails */
+form:invalid>#submit {
+    pointer-events: none;
+}
+
+
+/* .................. Footer Container Styles .................. */
+
 .footer {
-    /* background-color: #F3F8FB; */
     padding-bottom: 3%;
 }
 
@@ -89,30 +120,48 @@ span {
     color: #4b49ff;
 }
 
-@media (max-width: 1199px) {
 
+
+
+/* ..................Media Queries .................. */
+
+@media (max-width: 1199px) {
     #survey-form {
         margin: 0% 18% 0% 19%;
     }
-
 }
 
 @media (max-width: 991px) {
-
     #survey-form {
         margin: 0% 8% 0% 9%;
     }
-
 }
 
 @media (max-width: 767px) {
+
+    .airdrop {
+        margin-left: 18%;
+        height: 12vh;
+        margin-bottom: 3%;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+    }
+
+    .header-container p {
+        font-size: 0.95rem;
+    }
 
     #survey-form {
         margin: 0% 4% 0% 4.5%;
     }
 
+
+}
+
+@media (max-width: 546px) {
     .airdrop {
-        margin-left: 18;
         margin-left: 25%;
     }
 
@@ -121,19 +170,12 @@ span {
     }
 
     .header-container p {
+        padding-left: 8%;
+        padding-right: 8%;
         font-size: 0.8rem;
     }
 
-}
-
-@media (max-width: 546px) {
-
     #survey-form {
         margin: 0% 4% 0% 4.5%;
-    }
-
-    .header-container p {
-        padding-left: 8%;
-        padding-right: 8%;
     }
 }
