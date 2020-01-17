@@ -28,139 +28,153 @@
 </head>
 
 <body>
+
     <!-- Header Container -->
-    <div class="header-container cointainer-fluid text-center">
-        <img class="airdrop" src="airdrop.svg" alt="airdrop logo">
-        <h1 id="title">Crypto Airdrop Survey Form</h1>
-        <p id="description">Please fill in this form to enable us improve on how best to serve you airdrops</p>
-    </div>
-    <!-- Form Container -->
-    <div class="container">
-        <div class="row align-items-center">
-            <form id="survey-form" class="container-fluid col">
-                <div class="form-group">
-                    <label id="name-label" for="name"><span>Name</span></label>
-                    <input type="text" class="form-control" placeholder="Name" id="name" name="name"
-                        pattern="[A-Za-z ]{1,32}" required>
-                </div>
-                <div class="form-group">
-                    <label id="email-label" for="email"><span>Email</span></label>
-                    <input type="email" class="form-control" placeholder="Email Address" inputmode="email" id="email"
-                        name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
-                </div>
-                <div class="form-group">
-                    <span>Do you apply for cryptocurrency airdrops?</span>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="yes" name="do_apply" value="yes" required>
-                        <label class="custom-control-label" for="yes">Yes</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="no" name="do_apply" value="no" required>
-                        <label class="custom-control-label" for="no">No</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label id="number-label" for="number"><span>How many cryptocurrency wallets do you
-                            have?</span></label>
-                    <input type="number" pattern="[0-9]*" inputmode="decimal" class="form-control" id="number"
-                        name="num_wallet" min="1" max="20" placeholder="Number of Wallets" required>
-                </div>
-                <div class="form-group">
-                    <span>Select the blockchain(s) you've received airdrop(s) on?</span>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="ethereum" name="received_on"
-                            value="ethereum">
-                        <label class="custom-control-label" for="ethereum">Ethereum</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="eos" name="received_on" value="eos">
-                        <label class="custom-control-label" for="eos">EOS</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="etc" name="received_on" value="etc">
-                        <label class="custom-control-label" for="etc">ETC</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="stellar" name="received_on"
-                            value="stellar">
-                        <label class="custom-control-label" for="stellar">Stellar</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="tron" name="received_on" value="tron">
-                        <label class="custom-control-label" for="tron">Tron</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="waves" name="received_on" value="waves">
-                        <label class="custom-control-label" for="waves">Waves</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="neo" name="received_on" value="neo">
-                        <label class="custom-control-label" for="neo">Neo</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label><span>Which of these is your favourite blockchain for airdrops</span></label>
-                    <select id="dropdown" class="form-control" name="favourite_bchain" required>
-                        <option value="" disabled selected hidden>Click Here to Select...</option>
-                        <option value="Ethereum">Ethereum</option>
-                        <option value="EOS">EOS</option>
-                        <option value="ETC">ETC</option>
-                        <option value="Stellar">Stellar</option>
-                        <option value="Tron">Tron</option>
-                        <option value="Waves">Waves</option>
-                        <option value="Neo">Neo</option>
-                        <option value="Others">Others</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <span>How did you hear about us?</span>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="twitter" name="hear_about_us"
-                            value="twitter" required>
-                        <label class="custom-control-label" for="twitter">Twitter</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="bitcointalk" name="hear_about_us"
-                            value="bitcointalk" required>
-                        <label class="custom-control-label" for="bitcointalk">Bitcointalk</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="altcointalk" name="hear_about_us"
-                            value="altcointalk" required>
-                        <label class="custom-control-label" for="altcointalk">Altcointalk</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="telegram" name="hear_about_us"
-                            value="telegram" required>
-                        <label class="custom-control-label" for="telegram">Telegram</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="facebook" name="hear_about_us"
-                            value="facebook" required>
-                        <label class="custom-control-label" for="facebook">Facebook</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="medium" name="hear_about_us" value="medium"
-                            required>
-                        <label class="custom-control-label" for="medium">Medium</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="article" name="hear_about_us"
-                            value="article" required>
-                        <label class="custom-control-label" for="article">Crypto Related Article</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="suggestions"><span>Any comments or suggestions on how to improve our
-                            service?</span></label>
-                    <textarea id="suggestions" class="col-12 " name="suggestions" rows="5"
-                        placeholder="Write something here..." required></textarea>
-                </div>
-                <button type="submit" id="submit" class="btn btn-lg btn-primary col-12">Submit</button>
-            </form>
+    <header role="banner">
+        <div class="header-container cointainer-fluid text-center">
+            <img class="airdrop" src="airdrop.svg" alt="airdrop logo">
+            <h1 id="title">Crypto Airdrop Survey Form</h1>
+            <p id="description">Please fill in this form to enable us improve on how best to serve you airdrops</p>
         </div>
-    </div>
-    <footer class=" footer text-center">
+    </header>
+
+
+
+    <!-- Form Container -->
+    <main role="main">
+        <div class="container">
+            <div class="row align-items-center">
+                <form id="survey-form" class="container-fluid col" role="form">
+                    <div class="form-group">
+                        <label id="name-label" for="name"><span>Name</span></label>
+                        <input type="text" class="form-control" placeholder="Name" id="name" name="name"
+                            pattern="[A-Za-z ]{1,32}" required>
+                    </div>
+                    <div class="form-group">
+                        <label id="email-label" for="email"><span>Email</span></label>
+                        <input type="email" class="form-control" placeholder="Email Address" inputmode="email"
+                            id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                    </div>
+                    <div class="form-group">
+                        <span>Do you apply for cryptocurrency airdrops?</span>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="yes" name="do_apply" value="yes"
+                                required>
+                            <label class="custom-control-label" for="yes">Yes</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="no" name="do_apply" value="no"
+                                required>
+                            <label class="custom-control-label" for="no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label id="number-label" for="number"><span>How many cryptocurrency wallets do you
+                                have?</span></label>
+                        <input type="number" pattern="[0-9]*" inputmode="decimal" class="form-control" id="number"
+                            name="num_wallet" min="1" max="20" placeholder="Number of Wallets" required>
+                    </div>
+                    <div class="form-group">
+                        <span>Select the blockchain(s) you've received airdrop(s) on</span>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="ethereum" name="received_on"
+                                value="ethereum">
+                            <label class="custom-control-label" for="ethereum">Ethereum</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="eos" name="received_on" value="eos">
+                            <label class="custom-control-label" for="eos">EOS</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="etc" name="received_on" value="etc">
+                            <label class="custom-control-label" for="etc">ETC</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="stellar" name="received_on"
+                                value="stellar">
+                            <label class="custom-control-label" for="stellar">Stellar</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="tron" name="received_on"
+                                value="tron">
+                            <label class="custom-control-label" for="tron">Tron</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="waves" name="received_on"
+                                value="waves">
+                            <label class="custom-control-label" for="waves">Waves</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="neo" name="received_on" value="neo">
+                            <label class="custom-control-label" for="neo">Neo</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="favourite_blockchain"><span>Which of these is your favourite blockchain for
+                                airdrops?</span></label>
+                        <select id="favourite_blockchain" class="form-control" name="favourite_bchain" required>
+                            <option value="" disabled selected hidden>Click Here to Select...</option>
+                            <option value="Ethereum">Ethereum</option>
+                            <option value="EOS">EOS</option>
+                            <option value="ETC">ETC</option>
+                            <option value="Stellar">Stellar</option>
+                            <option value="Tron">Tron</option>
+                            <option value="Waves">Waves</option>
+                            <option value="Neo">Neo</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <span>How did you hear about us?</span>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="twitter" name="hear_about_us"
+                                value="twitter" required>
+                            <label class="custom-control-label" for="twitter">Twitter</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="bitcointalk" name="hear_about_us"
+                                value="bitcointalk" required>
+                            <label class="custom-control-label" for="bitcointalk">Bitcointalk</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="altcointalk" name="hear_about_us"
+                                value="altcointalk" required>
+                            <label class="custom-control-label" for="altcointalk">Altcointalk</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="telegram" name="hear_about_us"
+                                value="telegram" required>
+                            <label class="custom-control-label" for="telegram">Telegram</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="facebook" name="hear_about_us"
+                                value="facebook" required>
+                            <label class="custom-control-label" for="facebook">Facebook</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="medium" name="hear_about_us"
+                                value="medium" required>
+                            <label class="custom-control-label" for="medium">Medium</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="article" name="hear_about_us"
+                                value="article" required>
+                            <label class="custom-control-label" for="article">Crypto Related Article</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="suggestions"><span>Any comments or suggestions on how to improve our
+                                service?</span></label>
+                        <textarea id="suggestions" class="col-12 " name="suggestions" rows="5"
+                            placeholder="Write something here..." required></textarea>
+                    </div>
+                    <button type="submit" id="submit" class="btn btn-lg btn-primary col-12">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class=" footer text-center" role="contentinfo">
         <div>Created by Enouwem Jim 🆖 👨🏻‍💻</div>
         <p>© Copyright <script type="text/javascript">
                 document.write(new Date().getFullYear());
