@@ -92,8 +92,8 @@ textarea:valid {
 /* Form Button Styles */
 .btn-primary {
     color: #fff !important;
-    background-color: #4b49ff !important;
-    border-color: #4b49ff !important;
+    background-color: #312EFF !important;
+    border-color: #312EFF !important;
     border-radius: 100vh !important;
     margin-top: 3% !important;
 }
@@ -111,13 +111,19 @@ form:invalid>#submit {
 
 
 /* .................. Footer Container Styles .................. */
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 .footer {
     padding-bottom: 3%;
 }
 
 .footer p {
-    color: #4b49ff;
+    color: #312EFF;
 }
 
 

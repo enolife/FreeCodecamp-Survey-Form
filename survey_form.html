@@ -41,10 +41,10 @@
 
 
     <!-- Form Container -->
-    <main role="main">
+    <main>
         <div class="container">
             <div class="row align-items-center">
-                <form id="survey-form" class="container-fluid col" role="form">
+                <form id="survey-form" class="container-fluid col">
                     <div class="form-group">
                         <label id="name-label" for="name"><span>Name</span></label>
                         <input type="text" class="form-control" placeholder="Name" id="name" name="name"
@@ -55,8 +55,8 @@
                         <input type="email" class="form-control" placeholder="Email Address" inputmode="email"
                             id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                     </div>
-                    <div class="form-group">
-                        <span>Do you apply for cryptocurrency airdrops?</span>
+                    <div class="form-group" role="radiogroup" aria-labelledby="apply_for_airdrops">
+                        <span id="apply_for_airdrops">Do you apply for cryptocurrency airdrops?</span>
                         <div class="custom-control custom-radio">
                             <input type="radio" class="custom-control-input" id="yes" name="do_apply" value="yes"
                                 required>
@@ -74,8 +74,8 @@
                         <input type="number" pattern="[0-9]*" inputmode="decimal" class="form-control" id="number"
                             name="num_wallet" min="1" max="20" placeholder="Number of Wallets" required>
                     </div>
-                    <div class="form-group">
-                        <span>Select the blockchain(s) you've received airdrop(s) on</span>
+                    <div class="form-group" role="group" aria-labelledby="received_on">
+                        <span id="received_on">Select the blockchain(s) you've received airdrop(s) on</span>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="ethereum" name="received_on"
                                 value="ethereum">
@@ -124,8 +124,8 @@
                             <option value="Others">Others</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <span>How did you hear about us?</span>
+                    <div class="form-group" role="radiogroup" aria-labelledby="hear_about_us">
+                        <span id="hear_about_us">How did you hear about us?</span>
                         <div class="custom-control custom-radio">
                             <input type="radio" class="custom-control-input" id="twitter" name="hear_about_us"
                                 value="twitter" required>
@@ -173,8 +173,8 @@
             </div>
         </div>
     </main>
-
-    <footer class=" footer text-center" role="contentinfo">
+    <hr>
+    <footer class="footer text-center">
         <div>Created by Enouwem Jim 🆖 👨🏻‍💻</div>
         <p>© Copyright <script type="text/javascript">
                 document.write(new Date().getFullYear());
