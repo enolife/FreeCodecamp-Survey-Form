@@ -2,7 +2,9 @@
 
 .header-container {
     background-color: #1f1f40;
+    color: white;
     padding-bottom: 15px;
+
 }
 
 .airdrop {
@@ -21,10 +23,6 @@ h1 {
     font-weight: 600;
 }
 
-.header-container>h1,
-p {
-    color: white;
-}
 
 
 
@@ -39,16 +37,17 @@ p {
 
 /* Form */
 #survey-form {
-    padding-bottom: 15%;
     font-family: 'Nunito', sans-serif;
-    font-weight: 600;
     font-size: 1.15em;
-    margin: 0% 23% 0% 25%;
+    font-weight: 600;
+    margin: 0 23% 0 25%;
+    padding-bottom: 15%;
+
 }
 
 
 .form-group {
-    margin: 2.5% 0% !important;
+    margin: 2.5% 0 !important;
 }
 
 /* The span tag here makes the form label bolder */
@@ -67,9 +66,10 @@ span {
 
 /* Checkbox and Radio Button Color when Selected */
 .custom-control-input:checked~.custom-control-label::before {
-    color: #fff !important;
-    border-color: #4b49ff !important;
     background-color: #4b49ff !important;
+    border-color: #4b49ff !important;
+    color: #fff !important;
+
 }
 
 
@@ -91,16 +91,16 @@ textarea:valid {
 
 /* Form Button Styles */
 .btn-primary {
-    color: #fff !important;
     background-color: #312EFF !important;
     border-color: #312EFF !important;
     border-radius: 100vh !important;
+    color: #fff !important;
     margin-top: 3% !important;
 }
 
 .btn-primary:hover {
-    border-color: rgb(55, 53, 214) !important;
     background: rgb(55, 53, 214) !important;
+    border-color: rgb(55, 53, 214) !important;
 }
 
 
@@ -112,8 +112,6 @@ form:invalid>#submit {
 
 /* .................. Footer Container Styles .................. */
 hr {
-    border: 0;
-    height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -133,22 +131,23 @@ hr {
 
 @media (max-width: 1199px) {
     #survey-form {
-        margin: 0% 18% 0% 19%;
+        margin: 0 18% 0 19%;
     }
 }
 
 @media (max-width: 991px) {
     #survey-form {
-        margin: 0% 8% 0% 9%;
+        margin: 0 8% 0 9%;
     }
 }
 
 @media (max-width: 767px) {
 
     .airdrop {
-        margin-left: 18%;
         height: 12vh;
         margin-bottom: 3%;
+        margin-left: 18%;
+
     }
 
     h1 {
@@ -160,7 +159,7 @@ hr {
     }
 
     #survey-form {
-        margin: 0% 4% 0% 4.5%;
+        margin: 0 4% 0 4.5%;
     }
 
 
@@ -182,6 +181,7 @@ hr {
     }
 
     #survey-form {
-        margin: 0% 4% 0% 4.5%;
+        font-size: .9em;
+        margin: 0 4% 0 4.5%;
     }
 }
