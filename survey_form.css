@@ -184,4 +184,8 @@ hr {
         font-size: .9em;
         margin: 0 4% 0 4.5%;
     }
+
+    .form-control {
+        height: calc(1.5em + .75rem + 2px);
+    }
 }
